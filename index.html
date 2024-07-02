@@ -11,7 +11,247 @@
             font-size: 100%;
         }
     </style>
-    <style>
+	<style>/*! CSS Used from: https://my.octafx.com/_styles/redesignVars/index.css?8ba42652669c7091659375426696355da16b0809 */
+._redesign{--color-primary-pressed:#0026C2;--color-primary:#0C34F0;--color-primary-light:#F3F5FE;--color-divider:#E2E6F9;--color-success-hover-pressed:#008C32;--color-success:#00B432;--color-success-light:#F2FBF4;--color-notify:#FFA217;--color-notify-light:#FFF6E8;--color-error:#F5281E;--color-error-light:#FEEEED;--color-black:#0B0B16;--color-subscript:#828CA0;--color-subscript-10:rgba(130, 140, 160, .1);--color-hint:#171720;--color-white:#FFFFFF;--color-transparent:transparent;}
+._redesign{--font_brand_font-family:Plus Jakarta Sans, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;--font_body_font-family:Roboto, RobotoDraft, Droid Sans, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;--font_uppercase:uppercase;}
+._redesign{--radius_full:999em;--radius_xs:8px;--radius_s:12px;--radius_m:16px;--radius_l:24px;--radius_xl:32px;}
+._redesign{--headline_1_font-weight:700;--headline_1_font-size:48px;--headline_1_line-height:56px;--headline_2_font-weight:700;--headline_2_font-size:32px;--headline_2_line-height:40px;--headline_3_font-weight:600;--headline_3_font-size:24px;--headline_3_line-height:32px;--headline_4_font-weight:600;--headline_4_font-size:20px;--headline_4_line-height:24px;--headline_4_letter-spacing:.15px;--special_numbers_font-weight:700;--special_numbers_font-size:24px;--special_numbers_line-height:32px;--subtitle_1_font-weight:600;--subtitle_1_font-size:16px;--subtitle_1_line-height:24px;--subtitle_2_font-weight:600;--subtitle_2_font-size:14px;--subtitle_2_line-height:20px;--body_1_font-weight:400;--body_1_font-size:16px;--body_1_line-height:24px;--body_1_letter-spacing:.5px;--body_2_font-weight:400;--body_2_font-size:14px;--body_2_line-height:20px;--body_2_letter-spacing:.25px;--button_font-weight:700;--button_font-size:14px;--button_line-height:24px;--button_letter-spacing:1.25px;--caption_font-weight:400;--caption_font-size:12px;--caption_line-height:16px;--caption_letter-spacing:.4px;--overline_font-weight:600;--overline_font-size:10px;--overline_line-height:14px;--overline_letter-spacing:1.5px;--overline_text-transform:uppercase;--label_font-weight:500;--label_font-size:8px;--label_line-height:9.5px;--label_letter-spacing:.5 px;}
+._redesign{--space-xl:56px;--space_l:32px;--space_m:24px;--space_s:16px;--space_xs:8px;}
+._redesign{--button_height:56px;--button_height_small:48px;--button_block_min-width:312px;--button_border-radius:100px;--button_border-width:2px;--button_padding-y:16px;--button_padding-y_small:8px;--button_padding-x:32px;--button_padding-x_small:16px;}
+._redesign{--radiobox_size:20px;--radiobox_border-radius:4px;--radiobox_border-width:2px;--radiobox-inner_size:10px;}
+._redesign{--input_height:56px;--input_height-small:36px;--input_border-width:2px;--input_border-radius:var(--radius_m);--input_padding-x:22px;--input_padding-y:var(--space_s);--input_padding:var(--input_padding-y) var(--input_padding-x);--input_shadow:none;--input_disabled-opacity:.5;--input_label-position:absolute;--input_label-z-index:1;--input_label-x-padding:7px;--input_label-padding:0 var(--input_label-x-padding);--input_label-margin-bottom:0;--input_label-focus-margin-x:calc(var(--input_padding-x) - var(--input_label-x-padding));--input_label-focus-margin:0 var(--input_label-focus-margin-x);--input_label-focus-pointer-event:none;--input_label-top:calc(var(--input_height) / 2);--input_label-focus-top:0;--input_label-transform:translateY(-50%);--input_label-transition:all .3s ease;--input_label-max-width:calc(100% - var(--input_label-focus-margin-x) * 2);--input_label-overflow:hidden;--input_label-text-overflow:ellipsis;--input_label-white-space:nowrap;--input_label-overflow-direction-rtl:ltr;--input_post-label-margin:8px var(--input_padding-x) 0;--input_prefix-width:36px;--input_prefix-icon-width:24px;--input_prefix-icon-height:24px;--input_padding-width-prefix:calc(var(--input_prefix-width) + var(--input_padding-x) - 3px);--input_padding-width-prefix-icon:calc(var(--input_prefix-icon-width) + var(--input_padding-x)*2);--input_padding-width-slot:calc(var(--input_prefix-width) + var(--input_padding-x) + 10px);--input_color-error:var(--color-error);--input_placeholder-color:var(--color-subscript);--input_background-color:var(--color-white);--input_text-color:var(--color-black);--input_focus-color:var(--color-primary);--input_border-color:var(--color-divider);}
+._redesign{--multiselect_shadow:none;--multiselect_min-height:var(--input_height);--multiselect_padding-x:var(--input_padding-x);--multiselect_border-width:var(--input_border-width);--multiselect_border-radius:var(--input_border-radius);--multiselect_label-z-index:11;--multiselect_label-max-width:calc(var(--input_label-max-width) - 40px + var(--multiselect_padding-x));--multiselect_caret-height:100%;--multiselect_content-margin:4px 0 18px;--multiselect_content-box-shadow:0px 4px 5px rgba(0, 0, 0, .1), 0px 1px 10px rgba(0, 0, 0, .08), 0px 2px 4px rgba(0, 0, 0, .14);--multiselect_content-border-with:0;--multiselect_content-border-radius:var(--radius_xs);--multiselect_content-y-margin:var(--space_s);--multiselect_content-min-height:var(--space-xl);--multiselect_content-padding-x:var(--space_m);--multiselect_content-padding-y:var(--space_s);--multiselect_border-color:var(--color-divider);--multiselect_content-border-color:transparent;--multiselect_content-hover-color:rgba(0, 38, 194, .04);--multiselect_placeholder-color:var(--input_placeholder-color);--multiselect_error-color:var(--color-error);--multiselect_active-color:var(--color-primary);}
+._redesign{--badge_radius:var(--radius_full);--badge_padding-top:4px;--badge_padding-right:8px;--badge_color-primary:var(--color-primary);--badge_color-secondary:var(--color-primary-light);--badge_color-success:var(--color-success);--badge_color-danger:var(--color-error);--badge_color-warning:var(--color-notify);--badge_color-info:var(--color-divider);--badge_color-light:var(--color-white);--badge_color-dark:var(--color-black);--badge_font-size:8px;--badge_font-weight:500;--badge_letter-spacing:.5px;}
+._redesign{--accordion_transition:.15s;--accordion_box-shadow:0 4px 5px rgba(85, 51, 0, .1), 0 1px 10px rgba(85, 51, 0, .08), 0 2px 4px rgba(85, 51, 0, .14);}
+._redesign{--modal_radius:var(--radius_l);--modal_padding:var(--space_m);--modal_opacity:.6;--modal_close-color:var(--color-subscript);}
+._redesign{--tabs_color-text:var(--color-subscript);--tabs_color-text-active:var(--color-primary);--tabs_color-border:var(--color-divider);--tabs_color-border-active:var(--color-primary);--tabs_font-family:var(--font_brand_font-family);--tabs_paddings:var(--space_s);--tabs_indent-content:var(--space_s);}
+._redesign{--progress-bar_height:12px;--progress-bar_height-inner:8px;--progress-bar_padding:2px;--progress-bar_radius:46px;--progress-bar_percent-margin:12px;}
+/*! CSS Used from: https://my.octafx.com/_styles/common/index.css?265b31a2d910daa19fdd626c2b00af1acfd47b3f */
+div,span,a,ul,li,header,section{font-size:100%;font:inherit;vertical-align:baseline;border:0;margin:0;padding:0;}
+header,section{display:block;}
+ul{list-style:none;}
+*{-webkit-font-smoothing:antialiased;}
+button{font-family:inherit;}
+*{box-sizing:border-box;}
+/*! CSS Used from: https://my.octafx.com/_styles/cabinet/index.css?86510c21102b214118acbbb7bb7429ad995bb136 */
+ul{margin:10px 0;}
+ul li{margin:8px 0;}
+.svg-icon{width:24px;height:24px;}
+@media (max-width:1024px){
+.svg-icon{width:22px;height:22px;}
+}
+.svg-icon--size-30{width:30px;height:20px;}
+.button-pure-wrapper{background-color:#0000;border:none;padding:0;display:block;}
+.button-pure-wrapper:focus{outline:none;}
+.language-choiser{color:#000;z-index:1;display:flex;position:relative;}
+.language-choiser__header{-webkit-user-select:none;user-select:none;text-transform:uppercase;letter-spacing:1px;cursor:pointer;background-color:#fff0;align-items:center;font-size:12px;font-weight:800;transition:background-color .3s;display:flex;}
+.language-choiser__header:hover{background-color:none;}
+.language-choiser__header_theme-blue{color:#469ef1;}
+.language-choiser__header svg{width:8px;height:6px;margin-left:10px;}
+._redesign .language-choiser__header{grid-gap:8px;grid-auto-flow:column;display:grid;}
+._redesign .language-choiser__header svg{width:24px;height:24px;margin:0;}
+.language-choiser__lang{color:#2f374c;text-transform:uppercase;font-size:12px;font-weight:500;}
+._redesign .language-choiser__lang{color:var(--color-black);font-weight:var(--body_1_font-weight);font-size:var(--body_1_font-size);line-height:var(--body_1_line-height);letter-spacing:.5px;order:1;}
+.language-choiser__flag{background-position:50%;background-repeat:no-repeat;background-size:100%;outline:none;width:19px;height:14px;display:inline-block;box-shadow:0 1px 2px #0006;}
+._redesign .language-choiser__flag{box-shadow:none;background-size:cover;border:1px solid #0000000d;border-radius:2px;width:24px;height:18px;}
+.language-choiser__flag_en{background-image:url(https://my.octafx.com/_img/common/flags/en.svg);}
+.language-choiser__flag_id{background-image:url(https://my.octafx.com/_img/common/flags/id.svg);}
+.language-choiser__flag_zh{background-image:url(https://my.octafx.com/_img/common/flags/zh.svg);}
+.language-choiser__flag_de{background-image:url(https://my.octafx.com/_img/common/flags/de.svg);}
+.language-choiser__flag_es{background-image:url(https://my.octafx.com/_img/common/flags/es.svg);}
+.language-choiser__flag_hi{background-image:url(https://my.octafx.com/_img/common/flags/hi.svg);}
+.language-choiser__flag_ms{background-image:url(https://my.octafx.com/_img/common/flags/ms.svg);}
+.language-choiser__flag_pt{background-image:url(https://my.octafx.com/_img/common/flags/pt.svg);}
+.language-choiser__flag_th{background-image:url(https://my.octafx.com/_img/common/flags/th.svg);}
+.language-choiser__flag_bn{background-image:url(https://my.octafx.com/_img/common/flags/bn.svg);}
+.language-choiser__flag_pk{background-image:url(https://my.octafx.com/_img/common/flags/pk.svg);}
+.language-choiser__flag_vi{background-image:url(https://my.octafx.com/_img/common/flags/vi.svg);}
+.language-choiser__flag_tr{background-image:url(https://my.octafx.com/_img/common/flags/tr.svg);}
+.language-choiser__lang+.language-choiser__flag{margin-left:36px;}
+._redesign .language-choiser__lang+.language-choiser__flag{width:28px;height:20px;margin:0;}
+.language-choiser__list-container{border:1px solid #e2e6ef;min-width:188px;position:absolute;top:34px;right:0;}
+.language-choiser__list-container:before{content:"";border:inherit;background-color:#fbfbfc;width:14px;height:14px;display:block;position:absolute;top:0;right:10px;transform:translate(-50%,-8px)rotate(45deg);}
+._redesign .language-choiser__list-container{top:100%;left:unset;margin-top:var(--space_s);border:none;right:0;}
+._redesign .language-choiser__list-container:before{content:none;}
+.language-choiser__list{background-color:#fbfbfb;flex-direction:column;width:100%;max-height:calc(100vh - 80px);margin:0;list-style:none;display:flex;position:relative;overflow:auto;box-shadow:0 3px 4px #b7b7b729;}
+._redesign .language-choiser__list{background-color:var(--color-white);border-radius:var(--radius_xs);padding:var(--button_padding-y_small)0;box-shadow:0 4px 5px #0000001a,0 1px 10px #00000014,0 2px 4px #00000024;}
+.language-choiser__list-container[data-showed=false]{display:none;}
+.language-choiser__list-item{white-space:nowrap;margin:0;display:inline-block;}
+.language-choiser__list-item+.language-choiser__list-item{border-top:1px solid #eeebe2;}
+._redesign .language-choiser__list-item+.language-choiser__list-item{border:none;}
+.language-choiser__button{box-sizing:border-box;background-color:#0000;outline:none;justify-content:space-between;width:100%;padding:15px;text-decoration:none;transition:background-color .3s;display:flex;}
+._redesign .language-choiser__button{grid-gap:var(--space_s);padding:var(--button_padding-y)var(--button_padding-x);flex-direction:row-reverse;grid-auto-flow:column;justify-content:start;align-items:center;display:grid;}
+:is(._redesign .language-choiser__button:hover,._redesign .language-choiser__button:focus-visible){background-color:var(--color-primary-light);}
+.header{background-color:#1a4cc2;position:relative;}
+.header._redesign{background-color:var(--color-white);}
+.header__content{position:relative;}
+@media (max-width:1101px){
+.header__content{flex-wrap:wrap;}
+}
+@media (min-width:1101px){
+.header__content{justify-content:flex-start;align-items:stretch;height:74px;display:flex;}
+}
+@media (max-width:768px){
+.header__content{flex-wrap:wrap;justify-content:space-between;height:auto;}
+}
+._redesign .header__content{grid-gap:var(--space_m);grid-template-columns:135px 1fr;grid-auto-flow:column;align-items:center;height:auto;padding:16px 24px;display:grid;}
+@media (max-width:1100px){
+._redesign .header__content{grid-gap:0;border-bottom:1px solid #e2e6f9;grid-template-rows:repeat(3,auto);grid-auto-flow:row;}
+}
+.header__logo{z-index:9;align-items:center;width:100%;height:52px;padding:0 20px;display:flex;position:relative;box-shadow:0 1px 8px #0006;}
+@media (min-width:1101px){
+.header__logo{box-shadow:none;width:auto;height:auto;position:absolute;top:50%;transform:translateY(-50%);}
+}
+._redesign .header__logo{position:unset;top:unset;transform:unset;box-shadow:none;height:auto;padding:0;}
+@media (min-width:1101px){
+._redesign .header__logo{top:unset;transform:none;}
+}
+.header__menu{margin-left:0;padding-top:16px;padding-bottom:20px;}
+@media (min-width:1101px){
+.header__menu{margin-left:24px;padding-top:0;padding-bottom:0;}
+}
+@media (min-width:1461px){
+.header__menu{margin:0 auto;}
+}
+@media (min-width:1101px){
+.header__menu._no-authorized{margin:0 auto;}
+}
+._redesign .header__menu{margin:0;}
+@media (max-width:1100px){
+._redesign .header__menu{padding:var(--space_l)0;}
+}
+.header__language{fill:#fff;z-index:9999;position:absolute;top:20px;left:auto;right:20px;}
+@media (min-width:1101px){
+.header__language{top:32px;}
+}
+._redesign .header__language{position:unset;right:unset;top:unset;left:unset;grid-column:3/4;justify-content:end;display:flex;}
+.header-logo{background-image:url(https://my.octafx.com/_img/cabinet/logos/logo-octa_redesign-white.svg);background-position:50%;background-repeat:no-repeat;background-size:contain;width:135px;height:32px;display:inline-block;}
+@media (max-width:1100px){
+.header-logo{width:94px;height:20px;}
+}
+._redesign .header-logo{background-image:url(https://my.octafx.com/_img/cabinet/logos/logo-octafx_redesign.svg);width:135px;height:32px;}
+@media (max-width:1100px){
+._redesign .header-logo{width:101px;height:24px;}
+}
+.header-menu{width:100%;padding:0;display:flex;}
+@media (max-width:1100px){
+.header-menu{justify-content:center;width:auto;display:block;}
+}
+@media (min-width:1101px){
+.header-menu{height:100%;}
+}
+.header-menu__item{align-items:stretch;display:flex;position:relative;}
+.header-menu__item:first-child{margin-left:0;}
+@media (max-width:1100px){
+.header-menu__item:first-child{border-top:none;}
+.header-menu__item{border-top:1px solid #ffffff1a;margin-left:0;padding:0 16px;}
+}
+@media (max-width:900px){
+.header-menu__item{height:auto;}
+}
+@media (max-width:1100px){
+._redesign .header-menu__item{padding:0;}
+}
+@media (max-width:576px){
+.header-menu__item_long{width:100%;}
+}
+._redesign .header-menu{grid-gap:var(--space_l);grid-auto-flow:column;justify-content:center;display:grid;}
+@media (max-width:1700px) and (min-width:1460px){
+._redesign .header-menu{grid-gap:var(--space_m);}
+}
+@media (max-width:1460px) and (min-width:1100px){
+._redesign .header-menu{grid-gap:0;}
+}
+@media (max-width:1100px){
+._redesign .header-menu{grid-auto-flow:row;justify-content:start;}
+}
+.header-toggle-btn{cursor:pointer;-webkit-tap-highlight-color:#0000;background:#1a4cc2;border-radius:12px;justify-content:center;align-items:center;width:100%;padding:20px 0;display:none;position:relative;}
+.header-toggle-btn:focus{outline:none;}
+@media (max-width:1100px){
+.header-toggle-btn{z-index:4;border-radius:12px;flex-direction:column;width:64px;height:30px;margin:auto;padding:0;display:flex;position:absolute;bottom:-12px;left:0;right:0;}
+}
+.header-toggle-btn:after,.header-toggle-btn:before{content:"";background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iNSIgdmlld0JveD0iMCAwIDExIDUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMC44Mjg2IDBDOS41IDEuNzY4MjdlLTA2IDAgMCAwIDBWNC42MjUwM0MwIDQuNjI1MDMgMC4wMzk4NTYgNC42MDc5MSAxLjM4NTUgMy4wOTk0OUMzIDEuNTAwMDMgNC41IDMuMDUxNzZlLTA1IDEwLjgyODYgMFoiIGZpbGw9IiMxQTRDQzIiLz48L3N2Zz4=);background-repeat:no-repeat;width:11px;height:9px;display:block;position:absolute;bottom:3px;}
+.header-toggle-btn:after{right:-10px;}
+.header-toggle-btn:before{left:-10px;transform:scaleX(-1);}
+._redesign .header-toggle-btn{background-color:unset;z-index:4;background-image:url(https://my.octafx.com/_img/cabinet/other/header-toggle-btn-bg.svg);background-position:bottom;background-repeat:no-repeat;width:115px;height:24px;bottom:-16px;}
+._redesign .header-toggle-btn:after,._redesign .header-toggle-btn:before{content:none;}
+.header-toggle-btn .svg-icon{transform:rotate(180deg);}
+.minify .header-toggle-btn .svg-icon{transform:rotate(0);}
+.header-toggle-btn-text{font-family:var(--font_brand_font-family);font-weight:var(--overline_font-weight);font-size:var(--overline_font-size);line-height:var(--overline_line-height);letter-spacing:var(--overline_letter-spacing);text-transform:uppercase;color:var(--color-subscript);text-align:center;grid-column:1/4;margin-bottom:-8px;display:none;}
+@media (max-width:1100px){
+.header-toggle-btn-text{display:block;}
+}
+.minify .header-toggle-btn-text{display:none;}
+.b-header-menu_no-account{justify-content:center;}
+@media (max-width:768px){
+.minify .b-header-menu_no-account{padding-top:30px;}
+}
+@media (max-width:1100px){
+.minify .b-header-menu{display:none;}
+}
+.b-header-menu__items{width:100%;height:100%;}
+@media (min-width:1100px){
+.b-header-menu__items{padding-right:455px;}
+}
+._no-authorized .b-header-menu__items{padding-right:0;}
+@media (max-width:900px){
+.b-header-menu__items{width:100%;}
+}
+@media (max-width:1100px){
+._redesign .b-header-menu{grid-area:2/1/3/4;}
+}
+.header-menu-button{height:inherit;color:#fff;cursor:pointer;flex-direction:column;justify-content:center;align-items:flex-start;width:100%;padding:0 35px;text-decoration:none;display:flex;position:relative;}
+@media (max-width:1460px){
+.header-menu-button{padding:0 20px;}
+}
+@media (max-width:1280px){
+.header-menu-button{padding:0 15px;}
+}
+@media (max-width:1100px){
+.header-menu-button{height:56px;}
+}
+._redesign .header-menu-button{height:inherit;padding:0;}
+.header-menu-button:focus{outline:none;}
+.header-menu-button:after{content:"";background-color:#ffa100;width:100%;height:4px;display:none;position:absolute;bottom:0;left:0;}
+@media (max-width:1100px){
+.header-menu-button:after{content:none;}
+}
+@media (min-width:1101px){
+.header-menu-button:not(._kyc-verification-required):focus:after,.header-menu-button:not(._kyc-verification-required):hover:after{visibility:visible;display:block;}
+}
+._redesign .header-menu-button:not(._kyc-verification-required):focus:after,._redesign .header-menu-button:not(._kyc-verification-required):hover:after{display:none;}
+._redesign .header-menu-button:not(._kyc-verification-required):focus .header-menu-button__content-wrapper,._redesign .header-menu-button:not(._kyc-verification-required):hover .header-menu-button__content-wrapper{background-color:var(--color-primary-light);}
+@media (max-width:1101px){
+._redesign .header-menu-button:not(._kyc-verification-required):focus .header-menu-button__content-wrapper,._redesign .header-menu-button:not(._kyc-verification-required):hover .header-menu-button__content-wrapper{background-color:unset;}
+}
+.header-menu-button__content-wrapper{flex-direction:row;justify-content:center;align-items:center;display:flex;}
+._redesign .header-menu-button__content-wrapper{grid-gap:8px;border-radius:var(--radius_full);grid-auto-flow:column;padding:8px 16px;display:grid;}
+@media (max-width:1100px){
+._redesign .header-menu-button__content-wrapper{grid-gap:16px;padding:0;}
+}
+.header-menu-button__icon-container{width:20px;height:20px;margin-right:10px;display:inline-flex;position:relative;}
+@media (max-width:1024px){
+.header-menu-button__icon-container{width:19px;height:19px;}
+}
+.header-menu-button__icon-container svg{fill:#fff;width:100%;height:100%;}
+._redesign .header-menu-button__icon-container{width:24px;height:24px;margin-right:0;}
+._redesign .header-menu-button__icon-container svg{color:var(--color-subscript);}
+@media (max-width:1100px){
+._redesign .header-menu-button__icon-container{display:block;}
+}
+.header-menu-button__title-container{position:relative;}
+._redesign .header-menu-button__title-container{grid-gap:8px;grid-auto-flow:column;display:grid;}
+.header-menu-button__title{color:#fff;text-align:center;text-transform:uppercase;text-overflow:ellipsis;white-space:nowrap;letter-spacing:.17px;font-size:13px;font-weight:500;display:inline-block;}
+@media (max-width:1280px){
+.header-menu-button__title{font-size:12px;}
+}
+._redesign .header-menu-button__title{color:var(--color-black);font-family:var(--font_brand_font-family);font-size:var(--button_font-size);font-weight:var(--button_font-weight);line-height:var(--button_line-height);letter-spacing:var(--button_letter-spacing);}
+button{cursor:pointer;-webkit-appearance:button;}
+*{box-sizing:border-box;}
+a,button{outline:none;}
+a:link,a:visited{color:var(--color-primary,#0d6ffb);}</style>
+    
+	<style>
         /*! CSS Used from: https://my.octafx.com/_styles/redesignVars/index.css?8ba42652669c7091659375426696355da16b0809 */
         ._redesign {
             --color-primary-pressed: #0026C2;
@@ -6283,23 +6523,19 @@ div,p{font-size:100%;font:inherit;vertical-align:baseline;border:0;margin:0;padd
             </path>
         </symbol>
     </svg>
-    <header class="header js-header-toggle minify js-header
+<header class="header js-header-toggle minify js-header
     _redesign
     ">
-        <div class="header__content">
-            <div class="header__logo">
-                <a href="#" class="header-logo _ofx"></a>
+    <div class="header__content">
+                    <div class="header__logo">
+                <a href="/" class="header-logo _ofx"></a>
             </div>
 
             <div class="header__menu _no-authorized b-header-menu b-header-menu_no-account">
                 <div class="b-header-menu__items">
                     <div class="header-menu">
-                        <div class="header-menu__item header-menu__item_long">
-                            <a href="https://www.octafx.com/contact-us/"
-                                class="header-menu-button header-menu-button_long js-user-hits-events"
-                                data-user-hits-type="Event" data-user-hits-name="click_header_customer_support"
-                                data-user-hits-category="header" data-user-hits-action="click"
-                                data-user-hits-label="link">
+                                                <div class="header-menu__item header-menu__item_long">
+                            <a href="https://www.octafx.com/contact-us/" class="header-menu-button header-menu-button_long js-user-hits-events" data-user-hits-type="Event" data-user-hits-name="click_header_customer_support" data-user-hits-category="header" data-user-hits-action="click" data-user-hits-label="link">
                                 <div class="header-menu-button__content-wrapper">
                                     <div class="header-menu-button__icon-container">
                                         <svg class="svg-icon">
@@ -6314,138 +6550,131 @@ div,p{font-size:100%;font:inherit;vertical-align:baseline;border:0;margin:0;padd
                                 </div>
                             </a>
                         </div>
-                        <div class="header-menu__item header-menu__item_long">
-                            <a href="https://www.octafx.com/downloads/mt4-for-pc/"
-                                class="header-menu-button header-menu-button_long js-user-hits-events"
-                                data-user-hits-type="Event" data-user-hits-name="click_header_downloads_mt4"
-                                data-user-hits-category="header" data-user-hits-action="click"
-                                data-user-hits-label="link">
-                                <div class="header-menu-button__content-wrapper">
-                                    <div class="header-menu-button__icon-container">
-                                        <svg class="svg-icon">
-                                            <use xlink:href="#download_redesign"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="header-menu-button__title-container">
-                                        <span class="header-menu-button__title">
+                                                                                                    <div class="header-menu__item header-menu__item_long">
+                                <a href="https://www.octafx.com/downloads/mt4-for-pc/" class="header-menu-button header-menu-button_long js-user-hits-events" data-user-hits-type="Event" data-user-hits-name="click_header_downloads_mt4" data-user-hits-category="header" data-user-hits-action="click" data-user-hits-label="link">
+                                    <div class="header-menu-button__content-wrapper">
+                                        <div class="header-menu-button__icon-container">
+                                            <svg class="svg-icon">
+                                                <use xlink:href="#download_redesign"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="header-menu-button__title-container">
+                                            <span class="header-menu-button__title">
                                                 Download MT4
                                             </span>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                                </a>
+                            </div>
+                                                                    </div>
                 </div>
             </div>
             <div class="header__language header__language_login">
-
-                <section class="language-choiser / js-language-choiser ">
-                    <header class="language-choiser__header language-choiser__header_theme-blue" data-element="header">
-                        <button class="button-pure-wrapper language-choiser__flag language-choiser__flag_en" data-bdd-id="country-flag-en">
+                
+<section class="language-choiser / js-language-choiser ">
+    <header class="language-choiser__header language-choiser__header_theme-blue" data-element="header">
+        <button class="button-pure-wrapper language-choiser__flag language-choiser__flag_en" data-bdd-id="country-flag-en">
 
         </button>
-                        <svg class="svg-icon svg-icon--size-30">
-                            <use xlink:href="#arrow-down_redesign"></use>
-                        </svg>
-                    </header>
-                    <div class="language-choiser__list-container" data-element="list" data-showed="false">
-                        <ul class="language-choiser__list">
+        <svg class="svg-icon svg-icon--size-30">
+            <use xlink:href="#arrow-down_redesign"></use>
+        </svg>
+    </header>
+    <div class="language-choiser__list-container" data-element="list" data-showed="false">
+        <ul class="language-choiser__list">
                             <li class="language-choiser__list-item">
-                                <a href="#/settings/change_lang/en/" class="language-choiser__button">
-                                    <span class="language-choiser__lang">English</span>
-                                    <span class="language-choiser__flag language-choiser__flag_en" data-bdd-id="lang-link-en"></span>
-                                </a>
-                            </li>
+                    <a href="/settings/change_lang/en/" class="language-choiser__button">
+                        <span class="language-choiser__lang">English</span>
+                        <span class="language-choiser__flag language-choiser__flag_en" data-bdd-id="lang-link-en"></span>
+                    </a>
+                </li>
                             <li class="language-choiser__list-item">
-                                <a href="#/settings/change_lang/id/" class="language-choiser__button">
-                                    <span class="language-choiser__lang">Bahasa Indonesia</span>
-                                    <span class="language-choiser__flag language-choiser__flag_id" data-bdd-id="lang-link-id"></span>
-                                </a>
-                            </li>
+                    <a href="/settings/change_lang/id/" class="language-choiser__button">
+                        <span class="language-choiser__lang">Bahasa Indonesia</span>
+                        <span class="language-choiser__flag language-choiser__flag_id" data-bdd-id="lang-link-id"></span>
+                    </a>
+                </li>
                             <li class="language-choiser__list-item">
-                                <a href="#/settings/change_lang/cn/" class="language-choiser__button">
-                                    <span class="language-choiser__lang">中文</span>
-                                    <span class="language-choiser__flag language-choiser__flag_zh" data-bdd-id="lang-link-zh"></span>
-                                </a>
-                            </li>
+                    <a href="/settings/change_lang/cn/" class="language-choiser__button">
+                        <span class="language-choiser__lang">中文</span>
+                        <span class="language-choiser__flag language-choiser__flag_zh" data-bdd-id="lang-link-zh"></span>
+                    </a>
+                </li>
                             <li class="language-choiser__list-item">
-                                <a href="#/settings/change_lang/ms/" class="language-choiser__button">
-                                    <span class="language-choiser__lang">Bahasa Melayu</span>
-                                    <span class="language-choiser__flag language-choiser__flag_ms" data-bdd-id="lang-link-ms"></span>
-                                </a>
-                            </li>
+                    <a href="/settings/change_lang/ms/" class="language-choiser__button">
+                        <span class="language-choiser__lang">Bahasa Melayu</span>
+                        <span class="language-choiser__flag language-choiser__flag_ms" data-bdd-id="lang-link-ms"></span>
+                    </a>
+                </li>
                             <li class="language-choiser__list-item">
-                                <a href="#/settings/change_lang/pt/" class="language-choiser__button">
-                                    <span class="language-choiser__lang">Português Brasileiro</span>
-                                    <span class="language-choiser__flag language-choiser__flag_pt" data-bdd-id="lang-link-pt"></span>
-                                </a>
-                            </li>
+                    <a href="/settings/change_lang/pt/" class="language-choiser__button">
+                        <span class="language-choiser__lang">Português Brasileiro</span>
+                        <span class="language-choiser__flag language-choiser__flag_pt" data-bdd-id="lang-link-pt"></span>
+                    </a>
+                </li>
                             <li class="language-choiser__list-item">
-                                <a href="#/settings/change_lang/es/" class="language-choiser__button">
-                                    <span class="language-choiser__lang">Español</span>
-                                    <span class="language-choiser__flag language-choiser__flag_es" data-bdd-id="lang-link-es"></span>
-                                </a>
-                            </li>
+                    <a href="/settings/change_lang/es/" class="language-choiser__button">
+                        <span class="language-choiser__lang">Español</span>
+                        <span class="language-choiser__flag language-choiser__flag_es" data-bdd-id="lang-link-es"></span>
+                    </a>
+                </li>
                             <li class="language-choiser__list-item">
-                                <a href="#/settings/change_lang/th/" class="language-choiser__button">
-                                    <span class="language-choiser__lang">ภาษาไทย</span>
-                                    <span class="language-choiser__flag language-choiser__flag_th" data-bdd-id="lang-link-th"></span>
-                                </a>
-                            </li>
+                    <a href="/settings/change_lang/th/" class="language-choiser__button">
+                        <span class="language-choiser__lang">ภาษาไทย</span>
+                        <span class="language-choiser__flag language-choiser__flag_th" data-bdd-id="lang-link-th"></span>
+                    </a>
+                </li>
                             <li class="language-choiser__list-item">
-                                <a href="#/settings/change_lang/de/" class="language-choiser__button">
-                                    <span class="language-choiser__lang">Deutsch</span>
-                                    <span class="language-choiser__flag language-choiser__flag_de" data-bdd-id="lang-link-de"></span>
-                                </a>
-                            </li>
+                    <a href="/settings/change_lang/de/" class="language-choiser__button">
+                        <span class="language-choiser__lang">Deutsch</span>
+                        <span class="language-choiser__flag language-choiser__flag_de" data-bdd-id="lang-link-de"></span>
+                    </a>
+                </li>
                             <li class="language-choiser__list-item">
-                                <a href="#/settings/change_lang/bn/" class="language-choiser__button">
-                                    <span class="language-choiser__lang">বাংলা ভাষা</span>
-                                    <span class="language-choiser__flag language-choiser__flag_bn" data-bdd-id="lang-link-bn"></span>
-                                </a>
-                            </li>
+                    <a href="/settings/change_lang/bn/" class="language-choiser__button">
+                        <span class="language-choiser__lang">বাংলা ভাষা</span>
+                        <span class="language-choiser__flag language-choiser__flag_bn" data-bdd-id="lang-link-bn"></span>
+                    </a>
+                </li>
                             <li class="language-choiser__list-item">
-                                <a href="#/settings/change_lang/hi/" class="language-choiser__button">
-                                    <span class="language-choiser__lang">हिन्दी</span>
-                                    <span class="language-choiser__flag language-choiser__flag_hi" data-bdd-id="lang-link-hi"></span>
-                                </a>
-                            </li>
+                    <a href="/settings/change_lang/hi/" class="language-choiser__button">
+                        <span class="language-choiser__lang">हिन्दी</span>
+                        <span class="language-choiser__flag language-choiser__flag_hi" data-bdd-id="lang-link-hi"></span>
+                    </a>
+                </li>
                             <li class="language-choiser__list-item">
-                                <a href="#/settings/change_lang/pk/" class="language-choiser__button">
-                                    <span class="language-choiser__lang">اُردُو‎ </span>
-                                    <span class="language-choiser__flag language-choiser__flag_pk" data-bdd-id="lang-link-pk"></span>
-                                </a>
-                            </li>
+                    <a href="/settings/change_lang/pk/" class="language-choiser__button">
+                        <span class="language-choiser__lang">اُردُو‎ </span>
+                        <span class="language-choiser__flag language-choiser__flag_pk" data-bdd-id="lang-link-pk"></span>
+                    </a>
+                </li>
                             <li class="language-choiser__list-item">
-                                <a href="#/settings/change_lang/vn/" class="language-choiser__button">
-                                    <span class="language-choiser__lang">Tiếng Việt</span>
-                                    <span class="language-choiser__flag language-choiser__flag_vi" data-bdd-id="lang-link-vi"></span>
-                                </a>
-                            </li>
+                    <a href="/settings/change_lang/vn/" class="language-choiser__button">
+                        <span class="language-choiser__lang">Tiếng Việt</span>
+                        <span class="language-choiser__flag language-choiser__flag_vi" data-bdd-id="lang-link-vi"></span>
+                    </a>
+                </li>
                             <li class="language-choiser__list-item">
-                                <a href="#/settings/change_lang/tr/" class="language-choiser__button">
-                                    <span class="language-choiser__lang">Türkçe</span>
-                                    <span class="language-choiser__flag language-choiser__flag_tr" data-bdd-id="lang-link-tr"></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
+                    <a href="/settings/change_lang/tr/" class="language-choiser__button">
+                        <span class="language-choiser__lang">Türkçe</span>
+                        <span class="language-choiser__flag language-choiser__flag_tr" data-bdd-id="lang-link-tr"></span>
+                    </a>
+                </li>
+                    </ul>
+    </div>
+</section>
             </div>
-            <div class="header-toggle-btn-text / js-header-toggle-btn">
+                            <div class="header-toggle-btn-text / js-header-toggle-btn">
                 Close menu
             </div>
-        </div>
-        <div class="header-toggle-btn / js-header-toggle-btn">
-            <svg class="svg-icon">
+            </div>
+    <div class="header-toggle-btn / js-header-toggle-btn">
+                    <svg class="svg-icon">
                 <use xlink:href="#header-toggle-btn-arrow"></use>
             </svg>
-        </div>
+            </div>
 
     </header>
-
-
-
     <div class="main-wrap _no-authorized / js-main-wrap">
         <main class="main-container page-block  main-container_login">
 
